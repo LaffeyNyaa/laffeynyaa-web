@@ -1,24 +1,23 @@
 <script setup lang="ts">
 import Button from './components/ButtonPrimary.vue'
 import Navbar from './components/NavbarTop.vue'
-import ContainerCenter from './components/ContainerContent.vue'
 import FooterBottom from './components/FooterCopyright.vue'
 import LanguageSwitch from './components/LanguageSwitch.vue'
 import { useI18n } from 'vue-i18n'
+import { useRouter } from 'vue-router'
 
 const { t } = useI18n()
+const router = useRouter()
 </script>
 
 <template>
     <Navbar>
-        <Button>{{ t('home') }}</Button>
-        <Button>{{ t('ai_chat') }}</Button>
+        <Button @click="router.push('/')">{{ t('home') }}</Button>
+        <Button @click="router.push('/ai-chat')">{{ t('ai_chat') }}</Button>
         <LanguageSwitch />
     </Navbar>
 
-    <ContainerCenter>
-        <img src="./assets/images/miku-pay.gif" alt="" />
-    </ContainerCenter>
+    <RouterView />
 
     <FooterBottom>
         <p>Copyright (c) 2025 LaffeyNyaa</p>
