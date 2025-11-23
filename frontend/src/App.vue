@@ -3,12 +3,17 @@ import Button from './components/ButtonPrimary.vue'
 import Navbar from './components/NavbarTop.vue'
 import ContainerCenter from './components/ContainerContent.vue'
 import FooterBottom from './components/FooterCopyright.vue'
+import LanguageSwitch from './components/LanguageSwitch.vue'
+import {useI18n} from 'vue-i18n'
+
+const {t} = useI18n()
 </script>
 
 <template>
     <Navbar>
-        <Button>Home</Button>
-        <Button>AI Chat</Button>
+        <Button>{{ t('home') }}</Button>
+        <Button>{{ t('ai_chat') }}</Button>
+        <LanguageSwitch />
     </Navbar>
 
     <ContainerCenter>
