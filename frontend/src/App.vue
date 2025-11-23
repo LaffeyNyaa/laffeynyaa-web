@@ -4,9 +4,9 @@ import Navbar from './components/NavbarTop.vue'
 import ContainerCenter from './components/ContainerContent.vue'
 import FooterBottom from './components/FooterCopyright.vue'
 import LanguageSwitch from './components/LanguageSwitch.vue'
-import {useI18n} from 'vue-i18n'
+import { useI18n } from 'vue-i18n'
 
-const {t} = useI18n()
+const { t } = useI18n()
 </script>
 
 <template>

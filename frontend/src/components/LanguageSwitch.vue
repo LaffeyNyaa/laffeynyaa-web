@@ -1,13 +1,11 @@
 <template>
-    <button @click="switchLanguage">
-        文/A
-    </button>
+    <button @click="switchLanguage">文/A</button>
 </template>
 
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
 
-const { locale, t } = useI18n()
+const { locale } = useI18n()
 
 const switchLanguage = () => {
     locale.value = locale.value === 'zh' ? 'en' : 'zh'
