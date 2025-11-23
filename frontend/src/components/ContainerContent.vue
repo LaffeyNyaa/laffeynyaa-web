@@ -14,7 +14,7 @@ div {
     margin-top: $margin-size;
     padding: $padding-size;
     justify-content: center;
-    background-color: $container-center-background-color;
+    background-color: $theme-background-color;
     border-radius: 10px;
 }
 </style>
