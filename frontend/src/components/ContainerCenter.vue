@@ -1,7 +1,7 @@
 <template>
-    <nav>
+    <div>
         <slot></slot>
-    </nav>
+    </div>
 </template>
 
 <script setup lang="ts"></script>
@@ -9,12 +9,12 @@
 <style scoped lang="scss">
 @use '../assets/styles/variables.scss' as *;
 
-nav {
+div {
     display: flex;
-    gap: 10px;
+    margin-top: $margin-size;
     padding: $padding-size;
     justify-content: center;
-    background-color: $navbar-top-background-color;
+    background-color: $container-center-background-color;
     border-radius: 10px;
 }
 </style>
