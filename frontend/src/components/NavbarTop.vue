@@ -14,7 +14,7 @@ nav {
     gap: 10px;
     padding: $padding-size;
     justify-content: center;
-    background-color: $navbar-top-background-color;
+    background-color: $theme-background-color;
     border-radius: 10px;
 }
 </style>
