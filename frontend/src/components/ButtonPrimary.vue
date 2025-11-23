@@ -17,6 +17,7 @@ button {
     transition: background-color 0.2s ease;
     padding: 10px 20px;
     font-size: 16px;
+    width: 90px;
 }
 
 button:hover {
