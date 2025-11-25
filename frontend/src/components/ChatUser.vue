@@ -20,19 +20,18 @@ interface Props {
     align: 'left' | 'right'
 }
 
-const props = withDefaults(defineProps<Props>(), {
+withDefaults(defineProps<Props>(), {
     username: 'Anonymous',
     avatarUrl: defaultAvatar,
     message: '',
     timestamp: () => new Date(),
-    align: 'left'
+    align: 'left',
 })
 
 const formatTime = (time: Date): string => {
     if (!time) {
         return ''
     }
-
 
     const date = new Date(time)
     const now = new Date()
@@ -53,7 +52,7 @@ const formatTime = (time: Date): string => {
     transition: background-color 0.2s ease;
 
     &:hover {
-        background-color: #E0E0E081;
+        background-color: #e0e0e081;
     }
 
     &.align-left {
@@ -75,13 +74,13 @@ const formatTime = (time: Date): string => {
 
 .username {
     font-weight: 600;
-    color: #00FFFF;
+    color: #00ffff;
     margin-right: 8px;
 }
 
 .timestamp {
     font-size: 0.75rem;
-    color: #C0C0C0;
+    color: #c0c0c0;
 }
 
 .message-content {
