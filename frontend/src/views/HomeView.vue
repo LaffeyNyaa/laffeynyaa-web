@@ -1,9 +1,9 @@
 <template>
-    <ContainerCenter>
+    <ContainerContent>
         <img src="../assets/images/miku-pay.gif" alt="" />
-    </ContainerCenter>
+    </ContainerContent>
 </template>
 
 <script setup lang="ts">
-import ContainerCenter from '../components/ContainerContent.vue'
+import ContainerContent from '../components/ContainerContent.vue'
 </script>
