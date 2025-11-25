@@ -10,10 +10,8 @@
 @use '../assets/styles/variables.scss' as *;
 
 div {
-    display: flex;
     margin-top: $margin-size;
     padding: $padding-size;
-    justify-content: center;
     background-color: $theme-background-color;
     border-radius: 10px;
 }
