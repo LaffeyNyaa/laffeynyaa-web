@@ -53,7 +53,7 @@ const formatTime = (time: Date): string => {
     transition: background-color 0.2s ease;
 
     &:hover {
-        background-color: rgba(0, 0, 0, 0.03);
+        background-color: #E0E0E081;
     }
 
     &.align-left {
