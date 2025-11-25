@@ -14,7 +14,7 @@ const switchLanguage = () => {
 </script>
 
 <style scoped lang="scss">
-@use '../assets/styles/variables.scss' as *;
+@use '@/assets/styles/variables.scss' as *;
 
 button {
     border: none;

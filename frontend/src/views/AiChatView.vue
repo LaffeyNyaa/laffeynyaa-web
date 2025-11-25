@@ -7,7 +7,7 @@
 
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
-import ContainerContent from '../components/ContainerContent.vue'
+import ContainerContent from '@/components/ContainerContent.vue'
 import ChatUser from '@/components/ChatUser.vue'
 import defaultAvatar from '@/assets/images/default-avatar.webp'
 

@@ -7,7 +7,7 @@
 <script setup lang="ts"></script>
 
 <style scoped lang="scss">
-@use '../assets/styles/variables.scss' as *;
+@use '@/assets/styles/variables.scss' as *;
 
 div {
     margin-top: $margin-size;
