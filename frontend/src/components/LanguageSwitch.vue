@@ -18,10 +18,10 @@ const switchLanguage = () => {
 
 button {
     border: none;
-    background-color: $button-primary-default-background-color;
+    background-color: $button-default-background-color;
     border-radius: 5px;
-    box-shadow: 0 3px 10px #e0e0e0;
-    transition: background-color 0.2s ease;
+    box-shadow: 0 3px 10px $shadow-color;
+    transition: background-color $transition-duration ease;
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
@@ -29,10 +29,10 @@ button {
 }
 
 button:hover {
-    background-color: $button-primary-hover-background-color;
+    background-color: $button-hover-background-color;
 }
 
 button:active {
-    background-color: $button-primary-active-background-color;
+    background-color: $button-active-background-color;
 }
 </style>

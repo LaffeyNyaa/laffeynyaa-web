@@ -46,11 +46,13 @@ const formatTime = (time: Date): string => {
 </script>
 
 <style scoped lang="scss">
+@use '@/assets/styles/variables.scss' as *;
+
 .chat-user {
     display: flex;
-    gap: 12px;
-    padding: 8px 16px;
-    transition: background-color 0.2s ease;
+    padding: $padding-size;
+    gap: 10px;
+    transition: background-color $transition-duration ease;
 
     &:hover {
         background-color: #e0e0e081;
@@ -71,6 +73,7 @@ const formatTime = (time: Date): string => {
     height: 64px;
     border-radius: 50%;
     object-fit: cover;
+    box-shadow: 0 3px 10px $shadow-color;
 }
 
 .username {
