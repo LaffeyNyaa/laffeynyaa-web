@@ -1,6 +1,7 @@
 <template>
     <div class="chat-user" :class="`align-${align}`">
         <img :src="avatarUrl" :alt="username" class="avatar" />
+
         <div>
             <span class="username">{{ username }}</span>
             <span class="timestamp">{{ formatTime(timestamp) }}</span>
