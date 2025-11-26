@@ -3,6 +3,7 @@ import Button from './components/ButtonPrimary.vue'
 import Navbar from './components/NavbarTop.vue'
 import FooterBottom from './components/FooterCopyright.vue'
 import LanguageSwitch from './components/LanguageSwitch.vue'
+import ContainerContent from './components/ContainerContent.vue'
 import { useI18n } from 'vue-i18n'
 import { useRouter } from 'vue-router'
 
@@ -17,7 +18,9 @@ const router = useRouter()
         <LanguageSwitch />
     </Navbar>
 
-    <RouterView />
+    <ContainerContent>
+        <RouterView />
+    </ContainerContent>
 
     <FooterBottom>
         <p>Copyright (c) 2025 LaffeyNyaa</p>

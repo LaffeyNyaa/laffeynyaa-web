@@ -1,16 +1,12 @@
 <template>
-    <ContainerContent class="center-align">
-        <img src="@/assets/images/miku-pay.gif" alt="" />
-    </ContainerContent>
+    <img class="center-align" src="@/assets/images/miku-pay.gif" alt="" />
 </template>
 
-<script setup lang="ts">
-import ContainerContent from '@/components/ContainerContent.vue'
-</script>
+<script setup lang="ts"></script>
 
 <style scoped>
 .center-align {
-    display: flex;
-    justify-content: center;
+    display: block;
+    margin: auto;
 }
 </style>
