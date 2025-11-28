@@ -64,8 +64,6 @@ const sendMessage = async () => {
     const reader = response.body.getReader()
     const decoder = new TextDecoder('utf-8')
 
-    let done = false
-
     const aiMessageData = {
         message: '',
         timestamp: new Date(),
@@ -76,6 +74,8 @@ const sendMessage = async () => {
     emit('message-sent', aiMessageData)
 
     aiMessageData.is_start = false
+
+    let done = false
 
     while (!done) {
         const { value, done: readerDone } = await reader.read()
@@ -99,7 +99,6 @@ const sendMessage = async () => {
 @use '@/assets/styles/variables.scss' as *;
 
 .chat-input {
-    display: flex;
     padding: $padding-size;
     width: 100%;
     box-sizing: border-box;

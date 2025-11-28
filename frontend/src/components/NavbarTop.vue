@@ -1,15 +1,13 @@
 <template>
-    <nav>
+    <nav class="navbar-top">
         <slot></slot>
     </nav>
 </template>
 
-<script setup lang="ts"></script>
-
 <style scoped lang="scss">
 @use '@/assets/styles/variables.scss' as *;
 
-nav {
+.navbar-top {
     display: flex;
     gap: 10px;
     padding: $padding-size;

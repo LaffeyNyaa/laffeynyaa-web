@@ -1,15 +1,13 @@
 <template>
-    <div>
+    <div class="container-content">
         <slot></slot>
     </div>
 </template>
 
-<script setup lang="ts"></script>
-
 <style scoped lang="scss">
 @use '@/assets/styles/variables.scss' as *;
 
-div {
+.container-content {
     margin-top: $margin-size;
     padding: $padding-size;
     background-color: $theme-background-color;

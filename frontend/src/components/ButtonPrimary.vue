@@ -1,5 +1,5 @@
 <template>
-    <button>
+    <button class="button-primary">
         <slot></slot>
     </button>
 </template>
@@ -9,7 +9,7 @@
 <style scoped lang="scss">
 @use '@/assets/styles/variables.scss' as *;
 
-button {
+.button-primary {
     border: none;
     background-color: $button-default-background-color;
     border-radius: 5px;
@@ -18,13 +18,13 @@ button {
     padding: 10px 20px;
     font-size: 16px;
     width: 90px;
-}
 
-button:hover {
-    background-color: $button-hover-background-color;
-}
+    &:hover {
+        background-color: $button-hover-background-color;
+    }
 
-button:active {
-    background-color: $button-active-background-color;
+    &:active {
+        background-color: $button-active-background-color;
+    }
 }
 </style>

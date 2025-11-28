@@ -1,15 +1,13 @@
 <template>
-    <footer>
+    <footer class="footer-copyright">
         <slot></slot>
     </footer>
 </template>
 
-<script setup lang="ts"></script>
-
 <style scoped lang="scss">
 @use '@/assets/styles/variables.scss' as *;
 
-footer {
+.footer-copyright {
     display: flex;
     margin-top: $margin-size;
     padding: $padding-size;
