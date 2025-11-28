@@ -17,7 +17,7 @@
     transition: background-color $transition-duration ease;
     padding: 10px 20px;
     font-size: 16px;
-    width: 90px;
+    width: 100px;
 
     &:hover {
         background-color: $button-hover-background-color;
