@@ -1,5 +1,7 @@
 {
     "home": "Home",
     "ai_chat": "AI Chat",
-    "type_message": "Type message"
+    "type_message": "Type message",
+    "ai": "AI",
+    "you": "You"
 }

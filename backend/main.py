@@ -18,7 +18,11 @@ qwen_flash = QwenFlash(os.environ["DASHSCOPE_API_KEY"])
 
 app = FastAPI()
 
-app.add_middleware(CORSMiddleware, allow_origins=["http://localhost:5173"])
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:5173"],
+    allow_methods=["*"]
+)
 
 
 async def stream_generator(
