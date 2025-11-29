@@ -12,20 +12,44 @@ const router = useRouter()
 </script>
 
 <template>
-    <Navbar>
-        <Button @click="router.push('/')">{{ t('home') }}</Button>
-        <Button @click="router.push('/ai-chat')">{{ t('ai_chat') }}</Button>
-        <LanguageSwitch />
-    </Navbar>
+    <div class="grid-container">
+        <Navbar class="navbar">
+            <Button @click="router.push('/')">{{ t('home') }}</Button>
+            <Button @click="router.push('/ai-chat')">{{ t('ai_chat') }}</Button>
+            <LanguageSwitch />
+        </Navbar>
 
-    <ContainerContent>
-        <RouterView />
-    </ContainerContent>
+        <ContainerContent class="container-content">
+            <RouterView />
+        </ContainerContent>
 
-    <FooterBottom>
-        <p>Copyright (c) 2025 LaffeyNyaa</p>
-        <a href="https://beian.miit.gov.cn/" target="_blank">津ICP备2024026458号-1</a>
-    </FooterBottom>
+        <FooterBottom class="footer-bottom">
+            <p>Copyright (c) 2025 LaffeyNyaa</p>
+            <a href="https://beian.miit.gov.cn/" target="_blank">津ICP备2024026458号-1</a>
+        </FooterBottom>
+    </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'navbar'
+        'content'
+        'footer';
+    grid-template-rows: auto 1fr auto;
+    height: 98vh;
+}
+
+.navbar {
+    grid-area: navbar;
+}
+
+.container-content {
+    grid-area: content;
+}
+
+.footer-bottom {
+    grid-area: footer;
+}
+</style>

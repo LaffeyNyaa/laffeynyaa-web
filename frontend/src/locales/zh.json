@@ -3,5 +3,6 @@
     "ai_chat": "AI 聊天",
     "type_message": "请输入消息",
     "ai": "AI",
-    "you": "你"
+    "you": "你",
+    "welcome_message": "欢迎来到 AI 聊天"
 }

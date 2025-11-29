@@ -2,7 +2,7 @@
     <div class="chat-user" :class="`align-${align}`">
         <img :src="avatarUrl" :alt="username" class="avatar" />
 
-        <div>
+        <div class="content-container">
             <span class="username">{{ username }}</span>
             <span class="timestamp">{{ formatTime(timestamp) }}</span>
             <p class="message-content">{{ message }}</p>
@@ -65,6 +65,10 @@ const formatTime = (time: Date): string => {
     &.align-right {
         flex-direction: row-reverse;
         margin-left: 20%;
+
+        .content-container {
+            align-items: flex-end;
+        }
     }
 }
 
@@ -84,10 +88,15 @@ const formatTime = (time: Date): string => {
 
 .timestamp {
     font-size: 0.75rem;
-    color: #c0c0c0;
+    color: #494949;
 }
 
 .message-content {
     margin: 0;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
 }
 </style>

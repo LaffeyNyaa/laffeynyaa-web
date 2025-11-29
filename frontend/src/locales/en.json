@@ -3,5 +3,6 @@
     "ai_chat": "AI Chat",
     "type_message": "Type message",
     "ai": "AI",
-    "you": "You"
+    "you": "You",
+    "welcome_message": "Welcome to AI Chat"
 }
