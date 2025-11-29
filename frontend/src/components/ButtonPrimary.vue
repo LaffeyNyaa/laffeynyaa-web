@@ -14,7 +14,7 @@
     background-color: $button-default-background-color;
     border-radius: 5px;
     box-shadow: 0 3px 10px $shadow-color;
-    transition: background-color $transition-duration ease;
+    transition: background-color $transition-duration-button ease;
     padding: 10px 20px;
     font-size: 16px;
     width: 100px;

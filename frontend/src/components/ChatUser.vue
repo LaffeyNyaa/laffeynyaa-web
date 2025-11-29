@@ -1,5 +1,5 @@
 <template>
-    <div class="chat-user" :class="`align-${align}`">
+    <div class="chat-user" :class="`align-${align}`" :style="{ opacity: isVisible ? 1 : 0 }">
         <img :src="avatarUrl" :alt="username" class="avatar" />
 
         <div class="content-container">
@@ -12,6 +12,7 @@
 
 <script setup lang="ts">
 import defaultAvatar from '@/assets/images/default-avatar.webp'
+import { nextTick, onMounted, ref } from 'vue'
 
 interface Props {
     username: string
@@ -27,6 +28,14 @@ withDefaults(defineProps<Props>(), {
     message: '',
     timestamp: () => new Date(),
     align: 'left',
+})
+
+const isVisible = ref(false)
+
+onMounted(() => {
+    nextTick(() => {
+        isVisible.value = true
+    })
 })
 
 const formatTime = (time: Date): string => {
@@ -52,7 +61,7 @@ const formatTime = (time: Date): string => {
     display: flex;
     padding: $padding-size;
     gap: 10px;
-    transition: background-color $transition-duration ease;
+    transition: all $transition-duration ease;
 
     &:hover {
         background-color: #e0e0e081;
