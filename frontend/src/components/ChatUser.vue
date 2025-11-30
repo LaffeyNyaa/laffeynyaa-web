@@ -61,7 +61,9 @@ const formatTime = (time: Date): string => {
     display: flex;
     padding: $padding-size;
     gap: 10px;
-    transition: all $transition-duration ease;
+    transition:
+        background-color $transition-duration ease,
+        opacity $transition-duration ease;
 
     &:hover {
         background-color: #e0e0e081;
